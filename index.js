@@ -1,4 +1,4 @@
-const hello = require("./build/Release/hello");
+const SWD = require("./build/Release/SWD");
 const { BrowserWindow, app, ipcMain } = require("electron");
 
 // console.log(hello.sayHello("sdfg"));
@@ -15,14 +15,18 @@ const createWindow = () => {
     },
   });
 
+  win.on("ready-to-show", () => {
+    const hbuf = win.getNativeWindowHandle().readUInt32LE().toString(16);
+    SWD.toBottom(hbuf);
+    SWD.initListener(hbuf);
+  });
+
   win.loadFile("index.html");
 };
 
 ipcMain.on("to-bottom", (_) => {
   const hbuf = win.getNativeWindowHandle().readUInt32LE().toString(16);
-  console.log(hbuf);
-
-  hello.sayHello(hbuf);
+  SWD.toBottom(hbuf);
 });
 
 app.whenReady().then(() => {
