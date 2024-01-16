@@ -1,5 +1,5 @@
 {
-  "name": "simplenodejsaddon",
+  "name": "swd",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "gypfile": true,
-  "devDependencies": {
-    "electron": "^28.1.3"
-  }
+  "gypfile": true
 }
