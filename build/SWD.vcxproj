@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3C033258-DFED-A4C3-A910-B10BEE04C621}</ProjectGuid>
+    <ProjectGuid>{49FD847F-AD43-C62E-8EE2-EEF2E56B27D9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SWD</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
