@@ -414,6 +414,16 @@
     "nodedir": "C:\\Users\\kori\\AppData\\Local\\node-gyp\\Cache\\21.1.0",
     "python": "C:\\Users\\kori\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
     "standalone_static_library": 1,
-    "msbuild_path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe"
+    "msbuild_path": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe",
+    "cache": "C:\\Users\\kori\\AppData\\Local\\npm-cache",
+    "globalconfig": "C:\\Program Files\\nodejs\\etc\\npmrc",
+    "global_prefix": "C:\\Program Files\\nodejs",
+    "init_module": "C:\\Users\\kori\\.npm-init.js",
+    "local_prefix": "C:\\Users\\kori\\Documents\\projects\\electron-swd",
+    "node_gyp": "C:\\Users\\kori\\AppData\\Roaming\\nvm\\v21.1.0\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js",
+    "npm_version": "10.2.0",
+    "prefix": "C:\\Program Files\\nodejs",
+    "userconfig": "C:\\Users\\kori\\.npmrc",
+    "user_agent": "npm/10.2.0 node/v21.1.0 win32 x64 workspaces/false"
   }
 }

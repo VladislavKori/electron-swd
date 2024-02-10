@@ -2,7 +2,7 @@
   "targets": [
     {
       "target_name": "SWD",
-      "sources": [ "swd.cc" ]
+      "sources": [ "./src/swd.cc" ]
     }
   ]
 }

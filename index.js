@@ -1,10 +1,20 @@
 const path = require("path");
+const os = require("os");
 
-const SWD = require(path.resolve(
-  __dirname,
-  "../packages/electron-swd/build/Release/SWD.node"
-));
+const SWD = require(path.join(__dirname, "build/Release/SWD.node"));
 
-export default {
-  toBottom: SWD.toBottom,
+module.exports = {
+  toBottom: (hwndBuffer) => {
+    if (os.type() !== "Windows_NT") {
+      throw new Error("This function not avaible on ", os.type());
+    } else {
+      try {
+        const hwndBigInt = BigInt(`0x${hwndBuffer.toString("hex")}`);
+        SWD.toBottom(hwndBigInt);
+      } catch (err) {
+        console.log(err);
+        return;
+      }
+    }
+  },
 };

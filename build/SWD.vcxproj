@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{49FD847F-AD43-C62E-8EE2-EEF2E56B27D9}</ProjectGuid>
+    <ProjectGuid>{1EE5D17E-14AE-7AAC-8919-0BF4AD0EC899}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>SWD</RootNamespace>
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
@@ -137,10 +137,10 @@
     <None Include="..\binding.gyp"/>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\swd.cc">
-      <ObjectFileName>$(IntDir)\swd.obj</ObjectFileName>
+    <ClCompile Include="..\src\swd.cc">
+      <ObjectFileName>$(IntDir)\src\swd.obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\Users\kori\AppData\Roaming\nvm\v21.1.0\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
+    <ClCompile Include="C:\Users\kori\Documents\projects\electron-swd\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
   <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
