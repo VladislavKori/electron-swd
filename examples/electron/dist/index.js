@@ -1,10 +1,7 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 const electron_1 = require("electron");
-const swd_custom_1 = __importDefault(require("swd-custom"));
+const electron_swd_1 = require("electron-swd");
 let win = null;
 const createWindow = () => {
     win = new electron_1.BrowserWindow({
@@ -19,8 +16,7 @@ const createWindow = () => {
 };
 electron_1.ipcMain.handle("to-bottom", (_) => {
     if (win !== null) {
-        const hwndBuffer = win.getNativeWindowHandle();
-        swd_custom_1.default.toBottom(hwndBuffer);
+        (0, electron_swd_1.toBottom)(win.getNativeWindowHandle());
     }
 });
 electron_1.app.whenReady().then(() => {

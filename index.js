@@ -1,7 +1,7 @@
 const path = require("path");
 const os = require("os");
 
-const SWD = require(path.join(__dirname, "build/Release/SWD.node"));
+const SWD = require('./build/Release/SWD')
 
 module.exports = {
   toBottom: (hwndBuffer) => {
